@@ -1,0 +1,20 @@
+<div *ngIf="articleAttributes as attributes" class="main-container">
+	<div class="table-container">
+		<div class="table-row heading">
+			<div class="row-item">Article ID</div>
+			<div class="row-item">Key</div>
+			<div class="row-item">Value</div>
+			<div class="row-item">Source</div>
+			<div class="row-item">Label</div>
+			<div class="row-item">Language</div>
+		</div>
+		<div *ngFor="let attribute of attributes" class="table-row">
+			<div class="row-item">{{attribute.articleId}}</div>
+			<div class="row-item">{{attribute.articleKey}}</div>
+			<div class="row-item">{{attribute.articleValue}}</div>
+			<div class="row-item">{{attribute.source}}</div>
+			<div class="row-item">{{attribute.label}}</div>
+			<div class="row-item">{{attribute.language}}</div>
+		</div>
+	</div>
+</div>
